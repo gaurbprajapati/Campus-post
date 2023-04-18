@@ -1,16 +1,19 @@
 import React from 'react';
-import Stack from '@mui/material/Stack';
 
+
+import './App.css'
+import Clubcard from './Components/ClubCard/Clubcard.jsx';
+import ResourceCard from './Components/ResourceCard/ResourceCard';
+import Sports from './Clubs/Sports/Sports';
 
 function App() {
   return (
     <>
-      <div>
-        Hello world!
-      </div>
-      <Stack spacing={2} direction="row">
-        Hello world
-      </Stack>
+
+      <ResourceCard />
+      <Clubcard />
+      <Sports />
+
     </>
   );
 }

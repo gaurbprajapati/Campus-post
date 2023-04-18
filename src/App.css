@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(./Font/Poppins-Medium.ttf);
+}
+
+
+
