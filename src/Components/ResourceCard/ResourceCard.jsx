@@ -1,65 +1,48 @@
+import { jugard } from "../../Data";
 
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
+import Typewriter from "typewriter-effect";
 
-import { jugard } from '../../Data';
-
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-
-import Typewriter from 'typewriter-effect'
-
-import './ResourceCard.scss';
-import Maincard from '../Maincard/Maincard';
+import "./ResourceCard.scss";
+import Maincard from "../Maincard/Maincard";
 
 const ResourceCard = () => {
   const [abouts, setAbouts] = useState([]);
 
   useEffect(() => {
-
     // console.log('useeffect is triggerin resource ');
-    setAbouts(jugard)
-  },[]);
+    setAbouts(jugard);
+  }, []);
 
   return (
     <>
-
-<section className='body'>
-
-<motion.div
-        initial={{opacity: 0}}
-        whileInView={{x: [40, 0], opacity: 1}}
-        transition={{ duration: 1}}
-      >
-  
-      <h1 className="head-text">Make Your learning   
-      <h3 className="greeting-text">
+      <section className="body">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ x: [40, 0], opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <h1 className="head-text">
+            Make Your learning
+            <h3 className="greeting-text">
               <Typewriter
                 options={{
-                  strings: [
-                    'Easier.',
-                    'Faster.',
-                    'Convenient.',
-                  ],
+                  strings: ["Easier.", "Faster.", "Convenient."],
                   autoStart: true,
                   loop: true,
                   deleteSpeed: 10,
-                  cursor: '',
+                  cursor: "",
                   delay: 100,
                 }}
               />
             </h3>
+          </h1>
+        </motion.div>
 
-            </h1>
-      
-      
-
-      </motion.div>
-
-      <div className="app__about">
-
-    
-
-      {/* <motion.div
+        <div className="app__about">
+          {/* <motion.div
         initial={{opacity: 0}}
         whileInView={{y: [40, 0], opacity: 1}}
         transition={{ duration: 1}}
@@ -81,11 +64,9 @@ const ResourceCard = () => {
       </div>
         </motion.div> */}
 
-
-        <Maincard data={jugard}/>
+          <Maincard data={jugard} />
         </div>
-        </section>
-
+      </section>
     </>
   );
 };

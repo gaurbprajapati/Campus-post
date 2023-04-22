@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import Navbar from './Pages/Home/NavBar'
-import HeroSection from './Pages/Home/HeroSection';
-import ResourceCard from './Components/ResourceCard/ResourceCard.jsx'
-import Clubcard from './Components/ClubCard/Clubcard'
-import Footer from './Components/Footer/Footer'
-import Sportclub from './club/Sportsclub.jsx'
+import Sportclub from "./club/Sportsclub.jsx";
+import Clubcard from "./Components/ClubCard/Clubcard";
+import Footer from "./Components/Footer/Footer";
+import ResourceCard from "./Components/ResourceCard/ResourceCard.jsx";
+import HeroSection from "./Pages/Home/HeroSection";
+import Navbar from "./Pages/Home/NavBar";
+
 function App() {
   return (
     <>
-
       <Navbar />
       <HeroSection />
       <ResourceCard />
@@ -17,11 +17,8 @@ function App() {
       {/* <Footer /> */}
 
       <Sportclub />
-
-
-
     </>
   );
 }
 
-export default App
+export default App;
