@@ -1,13 +1,19 @@
-import * as React from 'react';
-import {Card,CardContent,CardMedia,Typography,CardActionArea,Link} from '@mui/material';
-
-
+import * as React from "react";
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+  CardActionArea,
+  Link,
+} from "@mui/material";
 
 export default function Cards(props) {
   return (
-    
-
-      <Card sx={{ maxWidth: 345 }} style={{boxShadow:"-2px 6px 10px rgba(0, 0, 0, 0.48)"}}>
+    <Card
+      sx={{ maxWidth: 345 }}
+      style={{ boxShadow: "-2px 6px 10px rgba(0, 0, 0, 0.48)" }}
+    >
       {/* // <Card sx={{ maxWidth: 345 }} style={{boxShadow:"0 0 13px #cbf1ff"}} > */}
       <CardActionArea>
         <CardMedia
@@ -26,7 +32,5 @@ export default function Cards(props) {
         </CardContent>
       </CardActionArea>
     </Card>
-
-
   );
 }
