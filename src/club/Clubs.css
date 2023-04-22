@@ -13,6 +13,8 @@ body {
     padding: 4rem;
     margin-top: 3rem;
     margin-left: 2rem;
+    position: sticky;
+    top: 0;
   }
   .announce {
     display: flex;

@@ -59,7 +59,7 @@ const ResourceCard = () => {
 
     
 
-      <motion.div
+      {/* <motion.div
         initial={{opacity: 0}}
         whileInView={{y: [40, 0], opacity: 1}}
         transition={{ duration: 1}}
@@ -79,11 +79,11 @@ const ResourceCard = () => {
           </motion.div>
         ))}
       </div>
-        </motion.div>
+        </motion.div> */}
 
 
+        <Maincard data={jugard}/>
         </div>
-        {/* <Maincard data={jugard}/> */}
         </section>
 
     </>

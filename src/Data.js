@@ -14,19 +14,19 @@ import cloudcomputing from './assets/cludcomputing.avif'
 
 
 
-export const Sportclub =
-{
-    id: 1,
-    clubtitle: "Sport Club",
-    clubbg: programming,
-    discription: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem eligendi laborum voluptatum eius accusamus exercitationem facere debitis dolor magnam minus.",
-    studentcodinators: {
-        president: "Rama Ram", visepresident: "Raju Raj",
-        clubmember: ["Papu", 'bolu']
-    },
-    facalitycodinators: ["facality1", "Facality2"],
-    clubCommunity: ['whatuplink', 'discodelink']
-}
+// export const Sportclub =
+// {
+//     id: 1,
+//     clubtitle: "Sport Club",
+//     clubbg: programming,
+//     discription: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem eligendi laborum voluptatum eius accusamus exercitationem facere debitis dolor magnam minus.",
+//     studentcodinators: {
+//         president: "Rama Ram", visepresident: "Raju Raj",
+//         clubmember: ["Papu", 'bolu']
+//     },
+//     facalitycodinators: ["facality1", "Facality2"],
+//     clubCommunity: ['whatuplink', 'discodelink']
+// }
 
 
 

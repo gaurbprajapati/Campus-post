@@ -1,7 +1,7 @@
 import {Clubs} from './Clubs';
 import SportImg from './images/SportImg.png';
 
-export function Sportsclub(){
+export default function Sportsclub(){
     const Sport={
         intro:{
         img:SportImg,
