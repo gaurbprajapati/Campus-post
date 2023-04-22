@@ -9,7 +9,7 @@ export const Clubs = ({prop}) => {
   const A=content.head[0];
   const B=content.head[1];
   const C=content.head[2];
-
+  const clubname  = intro.a
     return (
         <div className="main">
           <div className="image"> 
@@ -78,10 +78,21 @@ export const Clubs = ({prop}) => {
               <br/>
               <div className="clubs">
               <h3>Clubs</h3>
-                {
+                {/* {
                   Clubs.map(dataa=>(
                     <p className='row'>{dataa}</p>
                   ))
+                } */}
+
+                
+                {
+                  Clubs.map((dataa,index)=>{
+                    if(dataa!==clubname){
+                      console.log(dataa!==clubname);
+                      return <p key={index} className='row'>{dataa}</p>
+
+                    }
+                  })
                 }
               </div>
             </div>
