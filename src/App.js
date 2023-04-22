@@ -1,12 +1,12 @@
 import React from 'react';
 import Stack from '@mui/material/Stack';
-import {Sportsclub} from './club/Sportsclub'
 
-function App() {
+
+function App(){
   return (
     <>
       <div>
-        
+        Hello world!
       </div>
       <Stack spacing={2} direction="row">
         Hello world
@@ -15,4 +15,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
