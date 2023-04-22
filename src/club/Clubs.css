@@ -5,7 +5,7 @@ body {
   .box{
     display: flex;
     padding: 2rem;
-    
+
     margin-left: 3rem;
     margin-right: 3rem;
   }
@@ -48,7 +48,7 @@ body {
     position:relative;
     flex:1;
     flex-direction:column;
-    
+
 }
 .i-left>:nth-child(1){
     color:black;
@@ -67,8 +67,8 @@ body {
     margin-top: 10px;
 }
 .i-right {
-    
-    position: relative; 
+
+    position: relative;
     background-size: 100%;
 }
 

@@ -94,7 +94,7 @@ export default Clubcard;
         exit={{opacity: 0, y: -50}}
         className="cluballdatas"
 
-      > 
+      >
 
 
 
@@ -106,7 +106,7 @@ export default Clubcard;
             >
 
 
-            
+
              <motion.div
                whileHover={{ scale: 0.9 }}
                transition={{duration: 0.5}}
@@ -122,7 +122,7 @@ export default Clubcard;
             )
 
 
-          })} 
+          })}
 
 
           </motion.div>
