@@ -13,14 +13,6 @@ import cloudcomputing from './assets/cludcomputing.avif'
 
 
 
-export const navLinks = ["home", "about", "contact"]
-
-// export const socialIcons = [
-//     <FaDribbble />,
-//     <FaInstagram />,
-//     <FaLinkedin />,
-//     <BsMedium />
-// ]
 
 export const Sportclub =
 {
@@ -101,17 +93,8 @@ export const Clubdata = [
         discription: " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
 
         category: "Sports"
-    },
-    // {
-    //     id: 7,
-    //     img: work6,
-    //     title: "club title  6",
-    //     discription: " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-
-    //     category: "Sports"
-    // }
+    }
 ]
-
 
 
 export const jugard = [

@@ -2,9 +2,10 @@ import React from 'react';
 
 
 import './App.css'
-import Clubcard from './Components/ClubCard/Clubcard.jsx';
+
+import Clubcard from './Components/ClubCard/Clubcard';
 import ResourceCard from './Components/ResourceCard/ResourceCard';
-import Sports from './Clubs/Sports/Sports';
+
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
 
       <ResourceCard />
       <Clubcard />
-      <Sports />
+
 
     </>
   );
