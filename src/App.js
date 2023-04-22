@@ -10,9 +10,8 @@ import Navbar from "./Pages/Home/NavBar";
 function App() {
   return (
     <>
-<<<<<<< HEAD
 
-=======
+
       <Navbar />
       <HeroSection />
       <ResourceCard />
@@ -20,7 +19,7 @@ function App() {
       {/* <Footer /> */}
 
       <Sportclub />
->>>>>>> develop
+
     </>
   );
 }
