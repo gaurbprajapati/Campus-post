@@ -1,20 +1,18 @@
-import React from "react";
-import HeroSection from "./Pages/Home/HeroSection"
-import NavBar from "./Pages/Home/NavBar";
-import Footer from "./Components/Footer/Footer"
-
-
+import React from 'react';
+import Stack from '@mui/material/Stack';
 
 
 function App(){
   return (
-     <>
-      <NavBar/>
-      <HeroSection/>
-      {/* <Footer/> */}
-     </>
-    
-  )
+    <>
+      <div>
+        Hello world!
+      </div>
+      <Stack spacing={2} direction="row">
+        Hello world
+      </Stack>
+    </>
+  );
 }
 
 export default App
