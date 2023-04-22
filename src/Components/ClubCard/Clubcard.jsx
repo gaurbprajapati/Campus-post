@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import "./Clubcard.scss"
 
-
-import Cards from '../Cards';
-
 import { ClubNav , Clubdata } from "../../Data";
 import { motion } from 'framer-motion';
+import Maincard from '../Maincard/Maincard';
 
 const Clubcard = () => {
   const [tab, setTab] = useState({ name: "all" });
@@ -14,7 +12,7 @@ const Clubcard = () => {
   const [onclickAnimation, setonclickAnimation] = useState({ y: 0, opacity: 1 });
 
   useEffect(() => {
-    console.log("useeffect");
+    console.log("useeffect is trigger");
     setonclickAnimation([{ y: 100, opacity: 0 }]);
 
     setTimeout(() => {
@@ -23,15 +21,14 @@ const Clubcard = () => {
     if (tab.name === "all") {
       setCdata(Clubdata)
     } else {
-      const newWork = Clubdata.filter(workImage => {
-        return workImage.category.toLowerCase() === tab.name;
+      const filterdata = Clubdata.filter(cluballdata => {
+        return cluballdata.category.toLowerCase() === tab.name;
 
       })
-      setCdata(newWork)
+      setCdata(filterdata)
     }
 
   },600);
-
 
   }, [tab])
 
@@ -45,8 +42,6 @@ const Clubcard = () => {
 
     <div className="container" id="Clubcard">
       <motion.div
-        // initial={{opacity: 0}}
-        // whileInView={{x: [80, 0], opacity: 1}}
         initial={{opacity: 0}}
         whileInView={{y: [-40, 0], opacity: 1}}
         transition={{ duration: 1}}
@@ -70,24 +65,48 @@ const Clubcard = () => {
       </motion.div>
 
 
-{/* clubs card display=============/////////////////////////////////////////////////////////////// */}
-<motion.div
+     <motion.div
         animate={onclickAnimation}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="workImages"
+      >
+      <Maincard  data={cdata}/>
+   
+     </motion.div>
+
+      
+    </div>
+  )
+}
+
+export default Clubcard;
+
+
+
+
+
+// this is past cards that are replaced with new one 
+
+{/* <motion.div
+        animate={onclickAnimation}
+        transition={{ duration: 0.5, delayChildren: 0.5 }}
+        className="cluballdatas"
       >
 
-      {/* <motion.div
+    <motion.div
         initial={{x: 0 ,opacity: 0}}
           whileInView={{ y: [-50,0], opacity: 1 }}
         transition={{ duration: 1 }}
         exit={{opacity: 0, y: -50}}
-        className="workImages"
+        className="cluballdatas"
 
-      > */}
+      > 
+
+
+
+
        {cdata.map((work) => {
           return (
-            <div className="workImage"
+            <div className="cluballdata"
              key={work.id}
             >
 
@@ -108,37 +127,31 @@ const Clubcard = () => {
             )
 
 
-          })}
-          {/* </motion.div> */}
+          })} 
+
 
           </motion.div>
 
-{/* clubs card display=============/////////////////////////////////////////////////////////////// */}
+          </motion.div> */}
+
+// -----------------------------------------------------------
 
 
-
-
-
-      <motion.div
-        initial={{x: 0 ,opacity: 0}}
-          whileInView={{ x: [250,0], opacity: 1 }}
-          transition={{duration: 1}}
-        className="talk"
-      >
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          transition={{duration: 0.3}}
-          className="talk_right"
-          >
-        <div className="talk_left">
-        so let's Explore<br /> 
-          <h3><span>Connect with your interested Club !</span></h3>
-        </div>
-        </motion.div>
-      </motion.div>
-      
-    </div>
-  )
-}
-
-export default Clubcard;
+// addition thing to add in future ,  put up and check
+      // <motion.div
+      //   initial={{x: 0 ,opacity: 0}}
+      //     whileInView={{ x: [250,0], opacity: 1 }}
+      //     transition={{duration: 1}}
+      //   className="talk"
+      // >
+      //   <motion.div
+      //     whileHover={{ scale: 1.1 }}
+      //     transition={{duration: 0.3}}
+      //     className="talk_right"
+      //     >
+      //   <div className="talk_left">
+      //   so let's Explore<br /> 
+      //     <h3><span>Connect with your interested Club !</span></h3>
+      //   </div>
+      //   </motion.div>
+      // </motion.div>

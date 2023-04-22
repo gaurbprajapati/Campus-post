@@ -17,7 +17,7 @@ import cloudcomputing from './assets/cludcomputing.avif'
 export const Sportclub =
 {
     id: 1,
-    clubname: "Sport Club",
+    clubtitle: "Sport Club",
     clubbg: programming,
     discription: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem eligendi laborum voluptatum eius accusamus exercitationem facere debitis dolor magnam minus.",
     studentcodinators: {
@@ -34,7 +34,7 @@ export const Clubdata = [
     {
         id: 1,
         img: work1,
-        name: "club title  1",
+        title: "club title  1",
         discription: " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
 
         category: "Education"
@@ -42,7 +42,7 @@ export const Clubdata = [
     {
         id: 2,
         img: work2,
-        name: "club title  2",
+        title: "club title  2",
         discription: " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
 
         category: "Education"
@@ -50,7 +50,7 @@ export const Clubdata = [
     {
         id: 3,
         img: work3,
-        name: "club title  3",
+        title: "club title  3",
         discription: " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
 
         category: "Education"
@@ -58,7 +58,7 @@ export const Clubdata = [
     {
         id: 9,
         img: work3,
-        name: "club title  3",
+        title: "club title  3",
         discription: " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
 
         category: "Education"
@@ -66,7 +66,7 @@ export const Clubdata = [
     {
         id: 4,
         img: work4,
-        name: "club title  4",
+        title: "club title  4",
         discription: " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
 
         category: "cultural"
@@ -74,7 +74,7 @@ export const Clubdata = [
     {
         id: 8,
         img: work4,
-        name: "club title  4",
+        title: "club title  4",
         discription: " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
 
         category: "cultural"
@@ -82,14 +82,14 @@ export const Clubdata = [
     {
         id: 5,
         img: work5,
-        name: "club title  5",
+        title: "club title  5",
         discription: " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
         category: 'cultural'
     },
     {
         id: 6,
         img: work6,
-        name: "club title  6",
+        title: "club title  6",
         discription: " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
 
         category: "Sports"

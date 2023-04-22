@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect'
 
 import './ResourceCard.scss';
+import Maincard from '../Maincard/Maincard';
 
 const ResourceCard = () => {
   const [abouts, setAbouts] = useState([]);
@@ -22,7 +23,7 @@ const ResourceCard = () => {
   return (
     <>
 
-<section className='App_body'>
+<section className='body'>
 
 <motion.div
         initial={{opacity: 0}}
@@ -54,18 +55,22 @@ const ResourceCard = () => {
 
       </motion.div>
 
+      <div className="app__about">
+
+    
+
       <motion.div
         initial={{opacity: 0}}
         whileInView={{y: [40, 0], opacity: 1}}
         transition={{ duration: 1}}
       >
-      <div className="app_inner">
+      <div className="app_main">
         {abouts.map((about, index) => (
           <motion.div
           whileInView={{ opacity: 1 }}
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.5, type: 'tween' }}
-          className="app_inner_item"
+          className="app_inner"
           key={about.title + index}
           >
             <img src={about.img} alt={about.title} />
@@ -75,7 +80,12 @@ const ResourceCard = () => {
         ))}
       </div>
         </motion.div>
+
+
+        </div>
+        {/* <Maincard data={jugard}/> */}
         </section>
+
     </>
   );
 };
