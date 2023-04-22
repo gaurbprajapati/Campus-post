@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div>
-        <Sportsclub/>
+        
       </div>
       <Stack spacing={2} direction="row">
         Hello world
