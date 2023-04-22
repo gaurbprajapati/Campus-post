@@ -24,7 +24,7 @@ export default function Sportsclub() {
       "jgjhg jhgghj jj jhgjh jhgjhvmv",
       "yhgiut hgf khggkj gfg hgi gjhbihbk",
     ],
-    Clubs: ["Sports club", "Dance Club", "Music Club", "Editorial Club"],
+    Clubs: ["Sports Club", "Dance Club", "Music Club", "Editorial Club"],
   };
   return (
     <>
