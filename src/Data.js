@@ -28,7 +28,8 @@ export const Clubdata = [
   {
     id: 1,
     img: work1,
-    title: "club title  1",
+    title: "sports club",
+    link: "/sportsclub",
     discription:
       " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
 
@@ -37,6 +38,7 @@ export const Clubdata = [
   {
     id: 2,
     img: work2,
+    link: "",
     title: "club title  2",
     discription:
       " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
@@ -46,6 +48,7 @@ export const Clubdata = [
   {
     id: 3,
     img: work3,
+    link: "",
     title: "club title  3",
     discription:
       " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
@@ -55,6 +58,7 @@ export const Clubdata = [
   {
     id: 9,
     img: work3,
+    link: "",
     title: "club title  3",
     discription:
       " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
@@ -64,6 +68,7 @@ export const Clubdata = [
   {
     id: 4,
     img: work4,
+    link: "",
     title: "club title  4",
     discription:
       " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
@@ -73,6 +78,7 @@ export const Clubdata = [
   {
     id: 8,
     img: work4,
+    link: "",
     title: "club title  4",
     discription:
       " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
@@ -82,6 +88,7 @@ export const Clubdata = [
   {
     id: 5,
     img: work5,
+    link: "",
     title: "club title  5",
     discription:
       " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
@@ -90,6 +97,7 @@ export const Clubdata = [
   {
     id: 6,
     img: work6,
+    link: "",
     title: "club title  6",
     discription:
       " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
