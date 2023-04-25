@@ -1,22 +1,18 @@
 import React from "react";
-
+import IndexPage from "./Pages/Home/IndexPage.js";
+import NavBar from "./Pages/Home/NavBar.js";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sportclub from "./club/Sportsclub.jsx";
-import Clubcard from "./Components/ClubCard/Clubcard";
-import Footer from "./Components/Footer/Footer";
-import ResourceCard from "./Components/ResourceCard/ResourceCard.jsx";
-import HeroSection from "./Pages/Home/HeroSection";
-import Navbar from "./Pages/Home/NavBar";
-
 function App() {
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <ResourceCard />
-      <Clubcard />
-      {/* <Footer /> */}
-
-      <Sportclub />
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<IndexPage />} />
+          <Route path="/sportsclub" element={<Sportclub />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
