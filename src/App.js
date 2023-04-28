@@ -4,6 +4,8 @@ import NavBar from "./Pages/Home/NavBar.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sportclub from "./club/Sportsclub.jsx";
 import AboutUs from "./Pages/Home/AboutUs.jsx";
+import Resource from "./resources/Resource.jsx";
+
 function App() {
   return (
     <>
@@ -14,6 +16,7 @@ function App() {
           <Route path="/sportsclub" element={<Sportclub />} />
           <Route path="/Home" element={<IndexPage />} />
           <Route path="/About" element={<AboutUs />} />
+          <Route path="/Resources" element={<Resource />} />
         </Routes>
       </BrowserRouter>
     </>
