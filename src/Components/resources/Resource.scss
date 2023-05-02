@@ -1,0 +1,48 @@
+.res-container {
+  display: flex;
+  height: 40rem;
+  justify-content: center;
+  column-gap: 6px;
+
+  margin-top: 6rem;
+
+  .left,
+  .right {
+    width: 25rem;
+    background: rgb(221, 236, 247);
+    border-radius: 10px;
+    padding: 10px;
+
+    padding-top: 30px;
+    text-align: center;
+    h1 {
+      font-size: 1.7rem;
+    }
+    p:hover {
+      color: rgb(72, 74, 78);
+    }
+  }
+
+  .center {
+    width: 50rem;
+    background: rgb(221, 236, 247);
+    border-radius: 10px;
+    padding: 10px;
+    h1 {
+      font-size: 3rem;
+    }
+    .resource-links {
+      padding: 12px;
+      .resource-heading {
+        display: flex;
+      }
+      .resourceSubHeading {
+        padding-left: 28px;
+
+        a {
+          color: rgb(67, 67, 249);
+        }
+      }
+    }
+  }
+}
