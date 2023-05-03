@@ -1,5 +1,5 @@
-import React, {useEffect} from "react";
-import {Route, Routes, useLocation} from "react-router-dom";
+import React, { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import Sportclub from "./club/Sportsclub.jsx";
 import AboutUs from "./Components/About Us/AboutUs.jsx";
@@ -11,23 +11,21 @@ import NavBar from "./Pages/Home/NavBar.jsx";
 function App() {
   const location = useLocation();
 
-  useEffect(() => { window.scrollTo(0, 0); }, [ location.pathname ]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   return (
     <>
       <NavBar />
       <Routes>
-        <Route path="/" element={
-    <IndexPage />} />
+        <Route path="/" element={<IndexPage />} />
         <Route path="/sportsclub" element={<Sportclub />} />
-        <Route path="/Home" element={
-    <IndexPage />} />
+        <Route path="/Home" element={<IndexPage />} />
         <Route path="/About" element={<AboutUs />} />
-        <Route path="/Resources" element={
-    <Resource />} />
-        <Route path="*" element={<ErrorPage />
-}
-/>
-      </Routes > < />
+        <Route path="/Resources" element={<Resource />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>{" "}
+    </>
   );
 }
 
