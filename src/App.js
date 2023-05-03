@@ -1,30 +1,14 @@
 import React, { useEffect } from "react";
 import IndexPage from "./Pages/Home/IndexPage.jsx";
 import NavBar from "./Pages/Home/NavBar.jsx";
-import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Sportclub from "./club/Sportsclub.jsx";
-import AboutUs from "./Pages/Home/AboutUs.jsx";
-// import Footer from "./Components/Footer/Footer.js";
+import AboutUs from "./Components/About Us/AboutUs.jsx";
+
 import Resource from "./Components/resources/Resource.jsx";
-// function ScrollToTop() {
-//   const navigate = useNavigate();
-
-//   useEffect(() => {
-//     const scrollHandler = () => window.scrollTo(0, 0);
-//     navigate(scrollHandler);
-//   }, [navigate]);
-
-//   return null;
-// }
+import ErrorPage from "./Components/ErrorPage/ErrorPage.jsx";
 
 function App() {
-  // const navigate = useNavigate();
-
-  // useEffect(() => {
-  //   const scrollHandler = () => window.scrollTo(0, 0);
-  //   console.log("chutiya");
-  //   navigate(scrollHandler);
-  // }, [navigate]);
   const location = useLocation();
 
   useEffect(() => {
@@ -39,7 +23,7 @@ function App() {
         <Route path="/Home" element={<IndexPage />} />
         <Route path="/About" element={<AboutUs />} />
         <Route path="/Resources" element={<Resource />} />
-        {/* <Route path="/*" element={<ScrollToTop />} /> */}
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </>
   );

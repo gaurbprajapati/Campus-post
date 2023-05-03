@@ -141,7 +141,7 @@ export const jugard = [
     id: 4,
     img: cloudcomputing,
     title: "Cloud AI ML",
-    link: "/sportsclub",
+    link: "/Resources",
     discription:
       "Learn Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, voluptate! ",
     category: "cultural",
