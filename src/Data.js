@@ -38,7 +38,7 @@ export const Clubdata = [
   {
     id: 2,
     img: work2,
-    link: "",
+    link: "/Resources",
     title: "club title  2",
     discription:
       " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
@@ -48,7 +48,7 @@ export const Clubdata = [
   {
     id: 3,
     img: work3,
-    link: "",
+    link: "/Resources",
     title: "club title  3",
     discription:
       " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
@@ -58,7 +58,7 @@ export const Clubdata = [
   {
     id: 9,
     img: work3,
-    link: "",
+    link: "/Resources",
     title: "club title  3",
     discription:
       " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
@@ -68,7 +68,7 @@ export const Clubdata = [
   {
     id: 4,
     img: work4,
-    link: "",
+    link: "/Resources",
     title: "club title  4",
     discription:
       " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
@@ -78,7 +78,7 @@ export const Clubdata = [
   {
     id: 8,
     img: work4,
-    link: "",
+    link: "/Resources",
     title: "club title  4",
     discription:
       " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
@@ -88,7 +88,7 @@ export const Clubdata = [
   {
     id: 5,
     img: work5,
-    link: "",
+    link: "/Resources",
     title: "club title  5",
     discription:
       " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
@@ -97,7 +97,7 @@ export const Clubdata = [
   {
     id: 6,
     img: work6,
-    link: "",
+    link: "/Resources",
     title: "club title  6",
     discription:
       " Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
@@ -111,6 +111,7 @@ export const jugard = [
     id: 1,
     img: programming,
     title: "Programing Language",
+    link: "/Resources",
     discription:
       "Learn Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, voluptate! ",
 
@@ -120,6 +121,7 @@ export const jugard = [
     id: 2,
     img: development,
     title: "Development",
+    link: "/Resources",
     discription:
       "Learn Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, voluptate! ",
 
@@ -129,6 +131,7 @@ export const jugard = [
     id: 3,
     img: datastructue,
     title: "Data Strueture ",
+    link: "/Resources",
     discription:
       "Learn Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, voluptate! ",
     category: "Education",
@@ -138,6 +141,7 @@ export const jugard = [
     id: 4,
     img: cloudcomputing,
     title: "Cloud AI ML",
+    link: "/Resources",
     discription:
       "Learn Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, voluptate! ",
     category: "cultural",
@@ -145,3 +149,9 @@ export const jugard = [
 ];
 
 export const ClubNav = ["All", "Education", "cultural", "Sports"];
+
+export const navItems = [
+  { id: 1, val: "Home" },
+  { id: 2, val: "About" },
+  { id: 3, val: "Contact" },
+];
