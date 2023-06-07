@@ -1,10 +1,11 @@
-
-
+const express = require('express')
 import { login, register, updateUser } from '../controller/userControler'
+const router = express.Router();
 
-app.post("/login", login());
+router.post("/login", login());
 
-app.post("/register", register());
+router.post("/register", register());
 
-app.post("/update", updateUser());
+router.post("/update", updateUser());
 
+export default router;
