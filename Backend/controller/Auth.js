@@ -4,36 +4,7 @@ import { sendCookie } from "../utils/features.js";
 import ErrorHandler from "../middlewares/error.js";
 import { validationResult } from 'express-validator';
 
-export const login = async (req, res, next) => {
-    try {
-        const { email, password } = req.body;
 
-        //Working process done :-- commed due to testing phase
-
-
-        // body('email', 'Enter a valid email').isEmail().run(req);
-        // body('password', 'Password cannot be blank').exists().normalizeEmail().run(req);
-        // const errorslog = validationResult(req);
-        // if (!errorslog.isEmpty()) {
-        //     return next(new ErrorHandler('Validation Error', 400, errorslog.array()));
-        // }
-        // console.log("req.body", email, password);
-        const user = await User.findOne({ email });
-        // console.log("user", user);
-
-        if (!user) return next(new ErrorHandler("Invalid Email or Password", 400));
-
-        const isMatch = await bcrypt.compare(password, user.password);
-        console.log("decoded", email, isMatch);
-
-        if (!isMatch)
-            return next(new ErrorHandler("Invalid Email or Password", 400));
-
-        sendCookie(user, res, `Welcome back Programmer lets Built user reumesr , ${user.name}`, 200);
-    } catch (error) {
-        next(error);
-    }
-};
 
 export const register = async (req, res, next) => {
     try {
@@ -89,6 +60,39 @@ export const register = async (req, res, next) => {
     }
 };
 
+
+export const login = async (req, res, next) => {
+    try {
+        const { username, email, password } = req.body;
+
+        //Working process done :-- commed due to testing phase
+
+
+        // body('email', 'Enter a valid email').isEmail().run(req);
+        // body('password', 'Password cannot be blank').exists().normalizeEmail().run(req);
+        // const errorslog = validationResult(req);
+        // if (!errorslog.isEmpty()) {
+        //     return next(new ErrorHandler('Validation Error', 400, errorslog.array()));
+        // }
+
+
+        // console.log("req.body", email, password);
+        const user = await User.findOne({ email });
+        // console.log("user", user);
+
+        if (!user) return next(new ErrorHandler("Invalid Email or Password", 400));
+
+        const isMatch = await bcrypt.compare(password, user.password);
+        console.log("decoded", email, isMatch);
+
+        if (!isMatch)
+            return next(new ErrorHandler("Invalid Email or Password", 400));
+
+        sendCookie(user, res, `Welcome back Programmer lets Built user reumesr , ${user.name}`, 200);
+    } catch (error) {
+        next(error);
+    }
+};
 
 
 export const logout = (req, res) => {
