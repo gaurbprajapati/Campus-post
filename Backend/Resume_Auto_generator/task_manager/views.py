@@ -1,10 +1,11 @@
+from django.forms import model_to_dict
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+
 from .models import Task
-from django.forms import model_to_dict
 
 
 # GET all tasks
