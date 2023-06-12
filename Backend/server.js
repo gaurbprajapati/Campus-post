@@ -1,8 +1,7 @@
+import dotenv from "dotenv";
 
-import dotenv from 'dotenv';
-
-import {app} from './app.js'
-import {dbconnet} from "./config.js";
+import { app } from "./app.js";
+import { dbconnet } from "./config.js";
 
 dotenv.config();
 
@@ -11,5 +10,6 @@ const port = 5000;
 // data base connection
 dbconnet();
 
-app.listen(port,
-           () => {console.log(`Server is running at port:${port}`, data)});
+app.listen(port, () => {
+  console.log(`Server is running at port:${port}`, data);
+});
