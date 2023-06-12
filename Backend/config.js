@@ -1,12 +1,10 @@
-// Set up MongoDB connection
-const mongoose = require('mongoose');
-const user = require('./models/user')
+import mongoose from "mongoose";
 
-const connectToMongo = () => {
-    mongoose.connect('mongodb://localhost/compus_post', {
+export const dbconnet = () => {
+    mongoose.connect("mongodb://localhost:27017", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        dbName: user,
+        dbName: "compus_post",
     })
         .then(() => {
             console.log('Connected to the database');
@@ -17,5 +15,3 @@ const connectToMongo = () => {
         });
 }
 
-
-module.exports = connectToMongo;
