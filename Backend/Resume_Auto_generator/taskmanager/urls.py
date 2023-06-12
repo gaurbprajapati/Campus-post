@@ -19,4 +19,7 @@ from django.urls import path
 
 # from task_manager.url
 
-urlpatterns = [path("admin/", admin.site.urls), path("", include("task_manager.urls"))]
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("", include("task_manager.urls"))
+]

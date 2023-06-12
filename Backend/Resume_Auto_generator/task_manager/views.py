@@ -39,7 +39,8 @@ def get_task(request, id):
         }
         return JsonResponse(task_data)
     except Task.DoesNotExist:
-        return Response({"error": "Task not found"}, status=status.HTTP_404_NOT_FOUND)
+        return Response({"error": "Task not found"},
+                        status=status.HTTP_404_NOT_FOUND)
 
 
 # POST a new task
@@ -50,18 +51,16 @@ def create_task(request):
     description = request.data.get("description")
 
     if not title:
-        return Response(
-            {"error": "Title field is required"}, status=status.HTTP_400_BAD_REQUEST
-        )
+        return Response({"error": "Title field is required"},
+                        status=status.HTTP_400_BAD_REQUEST)
 
     try:
         task = Task.objects.create(title=title, description=description)
         return Response(model_to_dict(task), status=status.HTTP_201_CREATED)
     except Exception as e:
         print("Error creating task:", e)
-        return Response(
-            {"error": "Task is not created"}, status=status.HTTP_404_NOT_FOUND
-        )
+        return Response({"error": "Task is not created"},
+                        status=status.HTTP_404_NOT_FOUND)
 
 
 # PUT/update an existing task
@@ -74,9 +73,8 @@ def update_task(request, id):
         description = request.data.get("description")
 
         if not title:
-            return Response(
-                {"error": "Title field is required"}, status=status.HTTP_400_BAD_REQUEST
-            )
+            return Response({"error": "Title field is required"},
+                            status=status.HTTP_400_BAD_REQUEST)
 
         task.title = title
         task.description = description
@@ -89,7 +87,8 @@ def update_task(request, id):
         }
         return Response(task_data, status=status.HTTP_201_CREATED)
     except Task.DoesNotExist:
-        return Response({"error": "Task not found"}, status=status.HTTP_404_NOT_FOUND)
+        return Response({"error": "Task not found"},
+                        status=status.HTTP_404_NOT_FOUND)
 
 
 # DELETE a task
@@ -99,8 +98,8 @@ def delete_task(request, id):
     try:
         task = Task.objects.get(id=id)
         task.delete()
-        return Response(
-            {"message": "Task deleted successfully"}, status=status.HTTP_204_NO_CONTENT
-        )
+        return Response({"message": "Task deleted successfully"},
+                        status=status.HTTP_204_NO_CONTENT)
     except Task.DoesNotExist:
-        return Response({"error": "Task not found"}, status=status.HTTP_404_NOT_FOUND)
+        return Response({"error": "Task not found"},
+                        status=status.HTTP_404_NOT_FOUND)
