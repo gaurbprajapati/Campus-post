@@ -7,7 +7,6 @@ from .models import Task
 from django.forms import model_to_dict
 
 
-
 # GET all tasks
 @api_view(['GET'])
 @csrf_exempt
@@ -24,6 +23,8 @@ def get_all_tasks(request):
     return JsonResponse(task_list, safe=False)
 
 # GET a single task by ID
+
+
 @api_view(['GET'])
 @csrf_exempt
 def get_task(request, id):
@@ -48,7 +49,7 @@ def create_task(request):
 
     if not title:
         return Response({'error': 'Title field is required'}, status=status.HTTP_400_BAD_REQUEST)
-    
+
     try:
         task = Task.objects.create(title=title, description=description)
         return Response(model_to_dict(task), status=status.HTTP_201_CREATED)
