@@ -56,7 +56,7 @@ function NavBar(props) {
       <CssBaseline />
       <AppBar
         component="nav"
-        style={{ background: "#5f5fcd" }}
+        style={{ background: "#000046" }}
         sx={{ height: "90px" }}
       >
         <Toolbar

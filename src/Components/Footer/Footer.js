@@ -8,12 +8,12 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="waves">
+        {/* <div className="waves">
           <div className="wave" id="wave1"></div>
           <div className="wave" id="wave2"></div>
           <div className="wave" id="wave3"></div>
           <div className="wave" id="wave4"></div>
-        </div>
+        </div> */}
         <ul className="social">
           <li>
             {" "}
@@ -45,17 +45,17 @@ const Footer = () => {
             </Link>{" "}
           </li>
           <li>
-            <Link to={"/"} style={{ color: "white" }}>
+            <Link to={"/About"} style={{ color: "white" }}>
               About
             </Link>{" "}
           </li>
-          <li>
+          {/* <li>
             <Link to={"/"} style={{ color: "white" }}>
               Team
             </Link>{" "}
-          </li>
+          </li> */}
           <li>
-            <Link to={"/"} style={{ color: "white" }}>
+            <Link to={"/Contact"} style={{ color: "white" }}>
               Contact
             </Link>{" "}
           </li>

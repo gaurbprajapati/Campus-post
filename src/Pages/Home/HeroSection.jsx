@@ -28,7 +28,7 @@ const HeroSection = () => {
   return (
     <Box
       sx={{
-        background: "linear-gradient(to top, #000046, #1cb5e0)",
+        background: "linear-gradient(to bottom, #000046, #1cb5e0)",
         minHeight: "100vh",
       }}
     >
@@ -47,7 +47,9 @@ const HeroSection = () => {
             >
               Welcome to
             </Typography>
-            <Title variant="h1">NIET Students CLUB</Title>
+            <Title variant="h1" sx={{ color: "aliceblue" }}>
+              NIET Students CLUB
+            </Title>
 
             <Typography
               variant="body2"
