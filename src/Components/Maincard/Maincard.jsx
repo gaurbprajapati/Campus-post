@@ -13,7 +13,7 @@ function Maincard(props) {
       <div className="body_main">
         {props.data?.map((dataval, index) => (
           <>
-            <Link to={dataval.link}>
+            <Link className="links" to={dataval.link}>
               <motion.div
                 whileInView={{ opacity: 1 }}
                 whileHover={{ scale: 1.1 }}
