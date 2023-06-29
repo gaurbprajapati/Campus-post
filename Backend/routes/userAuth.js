@@ -4,8 +4,7 @@ import express from "express";
 import { authval, login, register, logout } from "../controller/Auth.js";
 import { userprofile } from '../controller/userprofile.js'
 import { isAuthenticated } from '../middlewares/auth.js'
-import { User } from '../models/User.js'
-export const router = express.Router()
+const router = express.Router()
 
 router.post("/login", login);
 router.get("/logout", logout);
@@ -20,4 +19,4 @@ router.get("/demo", (req, res) => {
 
 router.post("/userupdate", isAuthenticated);
 
-
+export default router;
