@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 export const dbconnet = () => {
-    mongoose.connect("mongodb://localhost:27017", {
+    mongoose.connect(process.env.Mongodb_url, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         dbName: "compus_post",

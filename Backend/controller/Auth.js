@@ -50,13 +50,15 @@ export const register = async (req, res, next) => {
             email: email,
         })
 
-        success = true
+        // const success = true
         const authToken = sendCookie(user, res, "Registered Successfully", 201);
         if (user) {
-            res.send("Registered Successfully", { success, authToken })
+            res.send({ success: true, authToken, message: "Registered Successfully" });
         }
     } catch (error) {
-        res.status(400).json(error);
+        next(error)
+
+        // res.status(400).json({ error: error.message }); // Send a JSON response with the error message
     }
 };
 
@@ -91,6 +93,9 @@ export const login = async (req, res, next) => {
         sendCookie(user, res, `Welcome back Programmer lets Built user reumesr , ${user.name}`, 200);
     } catch (error) {
         next(error);
+        res.json({
+            error
+        })
     }
 };
 
@@ -106,4 +111,4 @@ export const logout = (req, res) => {
         });
 };
 
-export const authval = 100
+
