@@ -1,7 +1,7 @@
 import express from "express";
 
 
-import { authval, login, register, logout } from "../controller/Auth.js";
+import { login, register, logout } from "../controller/Auth.js";
 import { userprofile } from '../controller/userprofile.js'
 import { isAuthenticated } from '../middlewares/auth.js'
 const router = express.Router()
